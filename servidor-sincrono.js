@@ -6,7 +6,7 @@ const hostname = '127.0.0.0';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-  const data = fs.readFileSync('index.html');
+  const data = fs.readFileSync("index.html");
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');

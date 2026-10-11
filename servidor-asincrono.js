@@ -8,7 +8,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   fs.readFile('index2.html', (err, data) => {
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.end(data);
   });
 });
